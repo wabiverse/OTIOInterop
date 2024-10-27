@@ -1,0 +1,52 @@
+module OpenTime_CXX
+{
+  header "opentime/errorStatus.h"
+  header "opentime/rationalTime.h"
+  header "opentime/stringPrintf.h"
+  header "opentime/swiftInterop.h"
+  header "opentime/timeRange.h"
+  header "opentime/timeTransform.h"
+  header "opentime/version.h"
+
+  export *
+}
+
+module OpenTimelineIO_CXX
+{
+  header "opentimelineio/anyDictionary.h"
+  header "opentimelineio/anyVector.h"
+  header "opentimelineio/clip.h"
+  header "opentimelineio/composable.h"
+  header "opentimelineio/composition.h"
+  header "opentimelineio/deserialization.h"
+  header "opentimelineio/effect.h"
+  header "opentimelineio/errorStatus.h"
+  header "opentimelineio/externalReference.h"
+  header "opentimelineio/freezeFrame.h"
+  header "opentimelineio/gap.h"
+  header "opentimelineio/generatorReference.h"
+  header "opentimelineio/imageSequenceReference.h"
+  header "opentimelineio/item.h"
+  header "opentimelineio/linearTimeWarp.h"
+  header "opentimelineio/mediaReference.h"
+  header "opentimelineio/missingReference.h"
+  header "opentimelineio/safely_typed_any.h"
+  header "opentimelineio/serializableCollection.h"
+  header "opentimelineio/serializableObject.h"
+  header "opentimelineio/serializableObjectWithMetadata.h"
+  header "opentimelineio/serialization.h"
+  header "opentimelineio/stack.h"
+  header "opentimelineio/stackAlgorithm.h"
+  header "opentimelineio/stringUtils.h"
+  header "opentimelineio/timeEffect.h"
+  header "opentimelineio/timeline.h"
+  header "opentimelineio/track.h"
+  header "opentimelineio/trackAlgorithm.h"
+  header "opentimelineio/transition.h"
+  header "opentimelineio/typeRegistry.h"
+  header "opentimelineio/unknownSchema.h"
+  header "opentimelineio/vectorIndexing.h"
+  header "opentimelineio/version.h"
+
+  export *
+}
