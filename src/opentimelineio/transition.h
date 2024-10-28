@@ -3,6 +3,7 @@
 
 #pragma once
 
+#include "opentime/swiftInterop.h"
 #include "opentimelineio/composable.h"
 #include "opentimelineio/version.h"
 
@@ -72,6 +73,6 @@ protected:
 private:
     std::string  _transition_type;
     RationalTime _in_offset, _out_offset;
-};
+} SWIFT_IMMORTAL_REFERENCE;
 
 }} // namespace opentimelineio::OPENTIMELINEIO_VERSION

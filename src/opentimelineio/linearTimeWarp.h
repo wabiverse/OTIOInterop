@@ -3,6 +3,7 @@
 
 #pragma once
 
+#include "opentime/swiftInterop.h"
 #include "opentimelineio/timeEffect.h"
 #include "opentimelineio/version.h"
 
@@ -40,6 +41,6 @@ protected:
 
 private:
     double _time_scalar;
-};
+} SWIFT_IMMORTAL_REFERENCE;
 
 }} // namespace opentimelineio::OPENTIMELINEIO_VERSION

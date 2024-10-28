@@ -3,6 +3,7 @@
 
 #pragma once
 
+#include "opentime/swiftInterop.h"
 #include "opentimelineio/mediaReference.h"
 #include "opentimelineio/version.h"
 
@@ -126,6 +127,6 @@ private:
     MissingFramePolicy _missing_frame_policy;
 
     RationalTime frame_duration() const noexcept;
-};
+} SWIFT_IMMORTAL_REFERENCE;
 
 }} // namespace opentimelineio::OPENTIMELINEIO_VERSION

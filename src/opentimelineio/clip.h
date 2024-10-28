@@ -3,6 +3,7 @@
 
 #pragma once
 
+#include "opentime/swiftInterop.h"
 #include "opentimelineio/item.h"
 #include "opentimelineio/mediaReference.h"
 #include "opentimelineio/version.h"
@@ -68,6 +69,6 @@ private:
 private:
     std::map<std::string, Retainer<MediaReference>> _media_references;
     std::string                                     _active_media_reference_key;
-};
+} SWIFT_IMMORTAL_REFERENCE;
 
 }} // namespace opentimelineio::OPENTIMELINEIO_VERSION

@@ -3,6 +3,7 @@
 
 #pragma once
 
+#include "opentime/swiftInterop.h"
 #include "opentimelineio/serializableObjectWithMetadata.h"
 #include "opentimelineio/version.h"
 
@@ -54,6 +55,6 @@ protected:
 private:
     Composition* _parent;
     friend class Composition;
-};
+} SWIFT_IMMORTAL_REFERENCE;
 
 }} // namespace opentimelineio::OPENTIMELINEIO_VERSION

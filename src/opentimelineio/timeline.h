@@ -3,6 +3,7 @@
 
 #pragma once
 
+#include "opentime/swiftInterop.h"
 #include "opentimelineio/serializableObjectWithMetadata.h"
 #include "opentimelineio/stack.h"
 #include "opentimelineio/track.h"
@@ -99,7 +100,7 @@ protected:
 private:
     std::optional<RationalTime> _global_start_time;
     Retainer<Stack>             _tracks;
-};
+} SWIFT_IMMORTAL_REFERENCE;
 
 template <typename T>
 inline std::vector<SerializableObject::Retainer<T>>

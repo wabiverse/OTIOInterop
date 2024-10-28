@@ -3,6 +3,7 @@
 
 #pragma once
 
+#include "opentime/swiftInterop.h"
 #include "opentimelineio/linearTimeWarp.h"
 #include "opentimelineio/version.h"
 
@@ -25,6 +26,6 @@ public:
 
 protected:
     virtual ~FreezeFrame();
-};
+} SWIFT_IMMORTAL_REFERENCE;
 
 }} // namespace opentimelineio::OPENTIMELINEIO_VERSION

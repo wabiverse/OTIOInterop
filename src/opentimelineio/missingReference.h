@@ -3,6 +3,7 @@
 
 #pragma once
 
+#include "opentime/swiftInterop.h"
 #include "opentimelineio/mediaReference.h"
 #include "opentimelineio/version.h"
 
@@ -33,6 +34,6 @@ protected:
 
     bool read_from(Reader&) override;
     void write_to(Writer&) const override;
-};
+} SWIFT_IMMORTAL_REFERENCE;
 
 }} // namespace opentimelineio::OPENTIMELINEIO_VERSION

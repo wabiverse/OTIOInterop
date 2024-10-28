@@ -3,6 +3,7 @@
 
 #pragma once
 
+#include "opentime/swiftInterop.h"
 #include "opentimelineio/errorStatus.h"
 #include "opentimelineio/version.h"
 
@@ -209,6 +210,6 @@ private:
 
     friend class SerializableObject;
     friend class CloningEncoder;
-};
+} SWIFT_IMMORTAL_REFERENCE;
 
 }} // namespace opentimelineio::OPENTIMELINEIO_VERSION

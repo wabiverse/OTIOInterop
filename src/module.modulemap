@@ -1,18 +1,20 @@
 module OpenTime_CXX
 {
+  header "opentime/version.h"
   header "opentime/errorStatus.h"
   header "opentime/rationalTime.h"
   header "opentime/stringPrintf.h"
   header "opentime/swiftInterop.h"
   header "opentime/timeRange.h"
   header "opentime/timeTransform.h"
-  header "opentime/version.h"
 
   export *
 }
 
 module OpenTimelineIO_CXX
 {
+  header "opentimelineio/version.h"
+  header "opentimelineio/algo/editAlgorithm.h"
   header "opentimelineio/anyDictionary.h"
   header "opentimelineio/anyVector.h"
   header "opentimelineio/clip.h"
@@ -46,7 +48,6 @@ module OpenTimelineIO_CXX
   header "opentimelineio/typeRegistry.h"
   header "opentimelineio/unknownSchema.h"
   header "opentimelineio/vectorIndexing.h"
-  header "opentimelineio/version.h"
 
   export *
 }

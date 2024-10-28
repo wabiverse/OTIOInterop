@@ -3,6 +3,7 @@
 
 #pragma once
 
+#include "opentime/swiftInterop.h"
 #include "opentimelineio/item.h"
 #include "opentimelineio/version.h"
 #include <set>
@@ -168,7 +169,7 @@ private:
     // This is for fast lookup only, and varies automatically
     // as _children is mutated.
     std::set<Composable*> _child_set;
-};
+} SWIFT_IMMORTAL_REFERENCE;
 
 template <typename T>
 inline std::vector<SerializableObject::Retainer<T>>

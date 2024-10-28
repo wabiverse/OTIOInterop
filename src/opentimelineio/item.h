@@ -3,6 +3,7 @@
 
 #pragma once
 
+#include "opentime/swiftInterop.h"
 #include "opentime/timeRange.h"
 #include "opentimelineio/composable.h"
 #include "opentimelineio/errorStatus.h"
@@ -101,6 +102,6 @@ private:
     std::vector<Retainer<Effect>> _effects;
     std::vector<Retainer<Marker>> _markers;
     bool                          _enabled;
-};
+} SWIFT_IMMORTAL_REFERENCE;
 
 }} // namespace opentimelineio::OPENTIMELINEIO_VERSION

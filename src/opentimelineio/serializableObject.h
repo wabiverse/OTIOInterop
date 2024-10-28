@@ -3,6 +3,7 @@
 
 #pragma once
 
+#include "opentime/swiftInterop.h"
 #include "opentime/rationalTime.h"
 #include "opentime/timeRange.h"
 #include "opentime/timeTransform.h"
@@ -682,7 +683,7 @@ private:
 
     AnyDictionary _dynamic_fields;
     friend class TypeRegistry;
-};
+} SWIFT_IMMORTAL_REFERENCE;
 
 template <class T, class U>
 SerializableObject::Retainer<T>

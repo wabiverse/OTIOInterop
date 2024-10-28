@@ -3,6 +3,7 @@
 
 #pragma once
 
+#include "opentime/swiftInterop.h"
 #include "opentimelineio/serializableObject.h"
 #include "opentimelineio/version.h"
 
@@ -49,6 +50,6 @@ private:
 
     friend class TypeRegistry;
     friend class SerializableObject::Writer;
-};
+} SWIFT_IMMORTAL_REFERENCE;
 
 }} // namespace opentimelineio::OPENTIMELINEIO_VERSION

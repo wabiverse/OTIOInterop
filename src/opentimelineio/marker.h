@@ -3,6 +3,7 @@
 
 #pragma once
 
+#include "opentime/swiftInterop.h"
 #include "opentimelineio/serializableObjectWithMetadata.h"
 #include "opentimelineio/version.h"
 
@@ -66,6 +67,6 @@ private:
     std::string _color;
     TimeRange   _marked_range;
     std::string _comment;
-};
+} SWIFT_IMMORTAL_REFERENCE;
 
 }} // namespace opentimelineio::OPENTIMELINEIO_VERSION

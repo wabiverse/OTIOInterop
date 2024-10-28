@@ -3,6 +3,7 @@
 
 #pragma once
 
+#include "opentime/swiftInterop.h"
 #include "opentimelineio/composition.h"
 #include "opentimelineio/serializableObjectWithMetadata.h"
 #include "opentimelineio/timeline.h"
@@ -81,7 +82,7 @@ protected:
 
 private:
     std::vector<Retainer<SerializableObject>> _children;
-};
+} SWIFT_IMMORTAL_REFERENCE;
 
 template <typename T>
 inline std::vector<SerializableObject::Retainer<T>>

@@ -3,6 +3,7 @@
 
 #pragma once
 
+#include "opentime/swiftInterop.h"
 #include "opentimelineio/mediaReference.h"
 #include "opentimelineio/version.h"
 
@@ -48,6 +49,6 @@ protected:
 private:
     std::string   _generator_kind;
     AnyDictionary _parameters;
-};
+} SWIFT_IMMORTAL_REFERENCE;
 
 }} // namespace opentimelineio::OPENTIMELINEIO_VERSION

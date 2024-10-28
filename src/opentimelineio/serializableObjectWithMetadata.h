@@ -3,6 +3,7 @@
 
 #pragma once
 
+#include "opentime/swiftInterop.h"
 #include "opentimelineio/serializableObject.h"
 #include "opentimelineio/version.h"
 
@@ -40,6 +41,6 @@ protected:
 private:
     std::string   _name;
     AnyDictionary _metadata;
-};
+} SWIFT_IMMORTAL_REFERENCE;
 
 }} // namespace opentimelineio::OPENTIMELINEIO_VERSION
